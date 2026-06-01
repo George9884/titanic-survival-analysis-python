@@ -80,6 +80,8 @@ Result:
 Plain text
 38.38%
 This means approximately 4 out of every 10 passengers survived.
+
+
 Survival Rate by Gender
 Python
 df.groupby('Sex')['Survived'].mean()
@@ -93,6 +95,8 @@ Male
 Key Insight
 Female passengers were significantly more likely to survive than male passengers.
 This suggests that gender played a major role in survival outcomes during the disaster.
+
+
 Survival Rate by Passenger Class
 Python
 df.groupby('Pclass')['Survived'].mean()
@@ -105,12 +109,15 @@ Survival Rate
 47.28%
 3rd Class
 24.24%
+
 Key Insight
 Passengers traveling in First Class had the highest probability of survival.
 Survival rates decreased steadily from First Class to Third Class, indicating that socioeconomic status influenced survival chances.
 Missing Values Analysis
 The analysis revealed missing values in several columns:
 Column
+
+
 Missing Values
 Cabin
 Highest
@@ -118,14 +125,21 @@ Age
 Moderate
 Embarked
 Few
+
+
 Key Insight
 The Cabin column contains a significant number of missing values and would require further preprocessing before being used in predictive modeling.
+
+
 Key Findings
 Overall passenger survival rate was approximately 38%.
 Female passengers had a substantially higher survival rate than males.
 First Class passengers had the highest likelihood of survival.
 Passenger class and gender were strong predictors of survival.
 The dataset contains missing values that require preprocessing before machine learning applications.
+
+
+
 Learning Outcomes
 Through this project, I gained practical experience in:
 Data Loading with Pandas
